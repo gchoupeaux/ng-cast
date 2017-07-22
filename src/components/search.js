@@ -1,5 +1,15 @@
 angular.module('video-player')
 
 .component('search', {
-  // TODO
+
+  controller: function() { 
+    
+    this.result = () => { 
+    
+    };
+
+    
+  },
+
+  templateUrl: 'src/templates/search.html'
 });
