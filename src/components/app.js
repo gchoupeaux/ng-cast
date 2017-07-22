@@ -3,18 +3,10 @@ angular.module('video-player')
 
   controller: function() { 
     this.videos = exampleVideoData;
-    this.currentVideo = null;
-    
-    // video player should not render a videoplayer if no video is provided ?
-    if (exampleVideoData[0]) {
-      this.currentVideo = exampleVideoData[0];
-    }
-  
-
-    this.selectVideo = function() { 
-    
+    this.currentVideo = exampleVideoData[0];
+    this.selectVideo = (video) => { 
+      this.currentVideo = video;
     };
-
     this.searchResults = function() {
     };
     

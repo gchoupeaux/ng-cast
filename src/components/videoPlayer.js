@@ -3,14 +3,11 @@ angular.module('video-player')
 .component('videoPlayer', {
 
   bindings: {
-    video: '<' 
+    video: '<', 
   },
-
-  controller: function() { 
-    console.log('clicked: ');
-  },
-
   
-
+ 
+                
   templateUrl: 'src/templates/videoPlayer.html'
+
 });
