@@ -8,7 +8,7 @@ angular.module('video-player')
       method: 'GET',
       url: 'https://www.googleapis.com/youtube/v3/search',
       params: {
-        key: 'AIzaSyCsng51JWl4hSarHOd1g-h_6rvir3VhkBU',
+        key: YOUTUBE_API_KEY,
         part: 'snippet',
         q: query,
         maxResults: '5',

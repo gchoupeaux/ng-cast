@@ -2,8 +2,8 @@ angular.module('video-player')
 .component('app', {
 
   controller: function(youTube) { 
-    this.videos = exampleVideoData;
-    this.currentVideo = exampleVideoData[0];
+    //this.videos = exampleVideoData;
+    //this.currentVideo = exampleVideoData[0];
     this.selectVideo = (video) => { 
       this.currentVideo = video;
     };
@@ -16,6 +16,7 @@ angular.module('video-player')
       //console.log('succes :', this.videos);// calling the service
       
     };
+    this.searchResults('cats');
     
   },
 
