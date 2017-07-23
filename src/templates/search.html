@@ -1,6 +1,8 @@
+<!-- Allow your search component to respond to an enter key press -->
+
 <div class="search-bar form-inline">
-  <input class="form-control" type="text" ng-model="searchstring" ng-keyup="$ctrl.result(searchstring)"/>
-  <button class="btn" ng-click="$ctrl.result(searchstring)">
+  <input class="form-control" type="text" ng-model="searchstring" ng-keyup="$ctrl.keyPress($event, searchstring)"/>
+  <button class="btn" ng-click="$ctrl.result(searchstring)" >
     <span class="glyphicon glyphicon-search"></span>
   </button>
 </div>

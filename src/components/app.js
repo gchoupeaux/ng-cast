@@ -8,7 +8,7 @@ angular.module('video-player')
       this.currentVideo = video;
     };
     this.searchResults = (searchstring) => {
-      //console.log('before search: ', searchstring);
+      console.log('before search: ', searchstring);
       youTube.search((response) => { 
         this.videos = response.data.items; 
         this.currentVideo = response.data.items[0];
